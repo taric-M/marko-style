@@ -1,0 +1,236 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans', sans-serif;
+	max-width: 2000px;
+}
+.menu {
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+    position: fixed;
+}
+.link-menu {
+	display:table-cell;
+	text-align: center;
+	padding: 15px 5px;
+    cursor:pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+	background-color: rgba(2,2,2,0.5);
+	color: white;
+}
+.link-menu:hover {
+	background-color: black;
+	color: rgb(193, 94, 15);
+
+}
+.header {
+	height: 300px;
+	border-bottom: 1px solid white;
+	background-image: url("../img/fon-header.jpg");
+	background-repeat: round;
+}
+.header-text {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Pattaya', sans-serif;
+} 
+.header-text h1 {
+	font-size: 6rem;
+	margin: 80px 0 2% 7%;
+	color: rgba(38, 18, 2, 0.7);
+	letter-spacing: 10px;
+	margin-right: auto;
+}
+.header-text h3 {
+	font-size: 2rem;
+	margin: 0 7% 0 7%;
+	color: rgba(229, 229, 220, 0.7);
+	font-family: 'Fira Sans', sans-serif;
+	margin-left: auto;
+}
+span {
+	color: rgb(193, 94, 15);
+}
+main {
+	background-image: url("../img/fon_uzory.jpg");
+}
+.container {
+	width: 80%;
+	background-color: rgba(104, 82, 63, 0.7);
+	margin: 0 auto;
+	box-shadow: -5px 5px 10px rgb(129, 129, 120);
+}
+h2 {
+	margin:0;
+	padding: 5% 0 2% 5%;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.flex-container {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+}
+.item-img {
+	flex-basis: 500px;
+	flex-grow: 1;
+}
+.item-text {
+	padding: 0 5px;
+	flex-basis: 400px;
+	flex-grow: 5;
+	font-size: 1rem;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+img {
+	width: 100%;
+}
+.doors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.doors-item {
+	flex-basis: 201px;
+	margin: 20px 5px;
+	flex-grow: 1;
+	max-width: 300px;
+}
+.security-doors-text {
+	text-align: center;
+}
+.button {
+	text-decoration: none;
+	padding: 7px 15px;
+	border-radius: 5px;
+	background-color: rgb(229, 229, 220);
+	width: 100%;
+	max-width: 300px;
+	color:rgb(31, 35, 40);
+	font-size: 1rem;
+	border: 1px solid rgb(84, 51, 25);
+}
+.button:hover {
+	background-color: rgb(38, 18, 2);
+	color: white;
+}
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.contacts-img {
+	flex-basis: 385px;
+	text-align: center;
+}
+.contacts-text {
+	flex-basis: 280px;
+	padding: 0 10px;
+	text-align: center;
+	line-height: 1.2em;
+}
+.contacts-form {
+	flex-basis: 350px;
+	text-align: center;
+
+}
+.contacts-item {
+	flex-grow: 1;
+	margin-top: 10px;
+}
+.width-input {
+	width: 100%;
+	max-width: 400px;
+	height: 2em;
+	border-radius: 5px;
+}
+legend {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: rgb(38, 18, 2);
+	font-size: 1.2rem;
+}
+fieldset {
+	border: 1px solid rgb(38, 18, 2);
+}
+#big-text {
+	height: 3em;
+}
+.footer-item {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.footer-item-partners {
+	flex-basis: 300px;
+}
+.footer p {
+	padding: 10px  0 15px 50px;
+}
+footer {
+	color: rgb(229, 229, 220);
+}
+footer h3 {
+	text-align: center;
+}
+@media screen and (max-width: 1153px) {
+	.item-img  {
+		order: 2;
+	}
+	.item-text {
+		order: 1;
+	}	
+}
+@media screen and (max-width: 900px) {
+	.header-text h1 {
+	font-size: 4rem;
+	}
+	.header-text h3 {
+	font-size: 1.5rem;
+	}
+	.header {
+	height: 250px;
+	}
+}
+@media screen and (max-width: 560px) {
+	.header-text h1 {
+	font-size: 2.5rem;
+	}
+	.header-text h3 {
+	font-size: 1rem;
+	}
+	.header {
+	height: 170px;
+	}
+	.link-menu {
+		font-size: 0.7rem;
+	}	
+}
+@media screen and (max-width: 414px) {
+	.menu {
+		display: none;
+	}
+	.container {
+		width: 100%;
+	}
+	.footer p {
+		font-size: 0.7rem;
+	}
+	.header {
+	height: 150px;
+	}
+	.header-text h1 {
+	font-size: 2rem;
+	margin-top: 40px;
+	}
+	.header-text h3 {
+	font-size: 0.7rem;
+	}
+}
