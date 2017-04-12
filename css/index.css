@@ -186,7 +186,10 @@ footer h3 {
 	}
 	.item-text {
 		order: 1;
-	}	
+	}
+	h2 {
+		padding-top: 70px;
+	}
 }
 @media screen and (max-width: 900px) {
 	.header-text h1 {
@@ -215,6 +218,9 @@ footer h3 {
 }
 @media screen and (max-width: 414px) {
 	.menu {
+		font-size: 0.7rem;
+	}
+	.link-menu-about {
 		display: none;
 	}
 	.container {
@@ -224,11 +230,11 @@ footer h3 {
 		font-size: 0.7rem;
 	}
 	.header {
-	height: 150px;
+	height: 130px;
 	}
 	.header-text h1 {
 	font-size: 2rem;
-	margin-top: 40px;
+	margin-top: 60px;
 	}
 	.header-text h3 {
 	font-size: 0.7rem;
