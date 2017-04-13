@@ -7,16 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header" id="header">
+		<header class="header">
 			<nav class="menu">
-				<a href="#header" class='link-menu'>Головна</a>
-				<a href="#about" class='link-menu link-menu-about'>Про нас</a>
-				<a href="#security-doors" class='link-menu'>Вхідні двері</a>
-				<a href="#interior-doors" class='link-menu'>Міжкімнатні двері</a>
-				<a href="#contacts" class='link-menu'>Контакти</a>
+				<a href="#about" class='link-menu' onclick="ready(this)">Про нас</a>
+				<a href="#security-doors" class='link-menu' onclick="ready(this)">Вхідні двері</a>
+				<a href="#interior-doors" class='link-menu' onclick="ready(this)">Міжкімнатні двері</a>
+				<a href="#contacts" class='link-menu' onclick="ready(this)">Контакти</a>
 			</nav>
 			<div class="header-text">
 				<h1><span>М</span>арко<span>стиль</span></h1>
