@@ -21,8 +21,6 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 	color: white;
-	display: inline-block;
-	width: 18%;
 }
 .link-menu:hover {
 	background-color: black;
