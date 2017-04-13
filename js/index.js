@@ -1,9 +1,11 @@
-$(document).ready(function(){
-    $('.link').click( function(){ 
-	var scroll_el = $(this).attr('href');
-        if ($(scroll_el).length != 0) { 
-	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); 
+ $(function() {
+    $('.link').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
         }
-	    return false;
     });
 });
